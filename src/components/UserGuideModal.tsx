@@ -93,10 +93,10 @@ export const UserGuideModal: React.FC<UserGuideModalProps> = ({ isOpen, onClose 
             <div className="space-y-1">
               <h3 className="font-bold text-emerald-950 flex items-center gap-1.5 text-sm">
                 <FileCode className="w-4 h-4 text-emerald-700" />
-                Importar arquivo JSON pronto (Opcional)
+                Importar frases ou versículos em JSON (Anexar arquivo ou Colar código)
               </h3>
               <p className="text-xs sm:text-[13px] text-stone-700">
-                Se você já possui suas próprias frases ou versículos salvos em um arquivo <code>.json</code>, clique no botão <strong>Inserir JSON</strong> (ao lado de Avançado). Se o resultado do passo anterior não foi bom o suficiente utilize o botão do robô para gerar um arquivo com passagens bíblicas melhores...
+                Se você já possui frases ou versículos, clique no botão <strong>Inserir JSON</strong> (ao lado do Robô). Você pode tanto <strong>anexar um arquivo .json</strong> quanto <strong>colar o código JSON diretamente</strong>. O sistema formata os 12 cartões instantaneamente. Se desejar, utilize o botão do robô Gemini para gerar novos versículos no formato exato.
               </p>
             </div>
           </div>

@@ -324,16 +324,15 @@ export default function App() {
     reader.readAsDataURL(file);
   };
 
-  // Importação e formatação direta de arquivo JSON com frases prontas
-  const handleImportJSONFile = async (file: File) => {
+  // Importação e formatação direta de JSON (seja via arquivo anexado ou código colado)
+  const handleImportJSONContent = (jsonText: string, sourceName?: string): boolean => {
     try {
-      const text = await file.text();
       let rawData: any;
       try {
-        rawData = JSON.parse(text);
+        rawData = JSON.parse(jsonText);
       } catch (parseErr) {
-        setErrorMessage('O arquivo selecionado não é um JSON válido. Verifique a formatação do arquivo.');
-        return;
+        setErrorMessage('O conteúdo informado não é um JSON válido. Verifique a formatação do JSON.');
+        return false;
       }
 
       // Função auxiliar para remover acentos e normalizar chaves
@@ -375,8 +374,8 @@ export default function App() {
       }
 
       if (items.length === 0) {
-        setErrorMessage('Nenhuma frase ou passagem encontrada no arquivo JSON.');
-        return;
+        setErrorMessage('Nenhuma frase ou passagem encontrada no JSON.');
+        return false;
       }
 
       const parsedPassages: ScripturePassage[] = items.map((item: any, idx: number) => {
@@ -477,18 +476,14 @@ export default function App() {
         );
 
         // Se encontrou referência mas não encontrou texto:
-        // Pode ser que o campo 'citacao' ou 'versiculo' estivesse em foundRef, ou haja apenas uma string longa no objeto
         if (!foundText) {
-          // Procura qualquer propriedade do tipo string que não seja a referência já encontrada
           const stringValues = Object.entries(item)
             .filter(([_, val]) => typeof val === 'string' && val.trim().length > 0)
             .map(([_, val]) => (val as string).trim());
 
           if (stringValues.length > 0) {
-            // Se já temos a referência, pega a maior string restante
             const remaining = stringValues.filter(s => s !== foundRef);
             if (remaining.length > 0) {
-              // A maior string é o texto da citação
               remaining.sort((a, b) => b.length - a.length);
               foundText = remaining[0];
             } else {
@@ -497,8 +492,7 @@ export default function App() {
           }
         }
 
-        // Se encontrou texto e referência, mas a "referência" é um texto longo (> 50 caracteres) e o "texto" é curto (< 35 caracteres),
-        // eles podem estar invertidos (ex: alguém chamou o campo de citação de "ref" e a sigla de "texto")
+        // Inversão se a referência for o texto longo e vice-versa
         if (foundText && foundRef && typeof foundText === 'string' && typeof foundRef === 'string') {
           if (foundRef.length > 50 && foundText.length < 35) {
             const temp = foundText;
@@ -508,12 +502,10 @@ export default function App() {
         }
 
         let passageText = (foundText ? String(foundText) : '').trim();
-        // Remove aspas externas desnecessárias que possam vir no JSON
         passageText = passageText.replace(/^["'“«]+|["'”»]+$/g, '').trim();
 
         let displayRef = (foundRef ? String(foundRef) : '').trim();
 
-        // Se ainda não temos displayRef, tenta montar com Livro/Capítulo/Versículo
         if (!displayRef) {
           const bookVal = normObj.livro || normObj.book;
           const chapVal = normObj.capitulo || normObj.chapter;
@@ -527,7 +519,6 @@ export default function App() {
           }
         }
 
-        // Extrai ou estima o livro
         const book = (normObj.livro || normObj.book || displayRef.split(/\s+\d/)[0] || 'Sagrada Escritura').trim();
 
         return {
@@ -563,25 +554,40 @@ export default function App() {
       const active12 = finalPassages.slice(0, 12);
       const alternates = finalPassages.slice(12);
 
+      const label = sourceName ? sourceName.replace(/\.json$/i, '') : 'Código JSON';
+
       setSelectedPassages(active12);
       setAlternates(alternates);
       setLockedIds(new Set());
       setErrorMessage(null);
       setSelectionMeta({
         engine: 'local',
-        themes: [file.name.replace(/\.json$/i, '') || 'Arquivo JSON'],
+        themes: [label],
         evaluatedCount: items.length,
       });
 
-      setSuccessToast(`12 cartões formatados com sucesso a partir de "${file.name}"!`);
+      setSuccessToast(`12 cartões formatados com sucesso a partir de "${label}"!`);
       setTimeout(() => setSuccessToast(null), 4500);
 
       // Rola a tela até os cartões
       setTimeout(() => {
         document.getElementById('cards-section')?.scrollIntoView({ behavior: 'smooth' });
       }, 100);
+
+      return true;
     } catch (err: any) {
       setErrorMessage('Erro ao importar JSON: ' + (err.message || 'Formato inválido'));
+      return false;
+    }
+  };
+
+  const handleImportJSONFile = async (file: File) => {
+    try {
+      const text = await file.text();
+      return handleImportJSONContent(text, file.name);
+    } catch (err: any) {
+      setErrorMessage('Erro ao ler arquivo: ' + err.message);
+      return false;
     }
   };
 
@@ -690,6 +696,7 @@ export default function App() {
               onSubmit={() => handlePerformSelection()}
               onOpenAdvanced={() => setIsAdvancedModalOpen(true)}
               onImportJSONFile={handleImportJSONFile}
+              onImportJSONContent={handleImportJSONContent}
               isLoading={isLoading}
               loadingStepText={loadingStep}
               hasAdvancedConfig={Boolean(pastoralGuidance || parishName || logoDataUrl)}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { SlidersHorizontal, X, Printer, FileDown, Bot, FileCode, HelpCircle } from 'lucide-react';
 import { UserGuideModal } from './UserGuideModal';
+import { JsonImportModal } from './JsonImportModal';
 
 interface ThemeSelectorProps {
   themeInput: string;
@@ -8,6 +9,7 @@ interface ThemeSelectorProps {
   onSubmit: () => void;
   onOpenAdvanced: () => void;
   onImportJSONFile?: (file: File) => void;
+  onImportJSONContent?: (content: string, sourceName?: string) => boolean | void;
   isLoading: boolean;
   loadingStepText: string;
   hasAdvancedConfig?: boolean;
@@ -39,6 +41,7 @@ export const ThemeSelector: React.FC<ThemeSelectorProps> = ({
   onSubmit,
   onOpenAdvanced,
   onImportJSONFile,
+  onImportJSONContent,
   isLoading,
   loadingStepText,
   hasAdvancedConfig,
@@ -52,7 +55,7 @@ export const ThemeSelector: React.FC<ThemeSelectorProps> = ({
   const [suggestionIdx, setSuggestionIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [isGuideOpen, setIsGuideOpen] = useState(false);
-  const jsonFileInputRef = useRef<HTMLInputElement>(null);
+  const [isJsonModalOpen, setIsJsonModalOpen] = useState(false);
 
   // Efeito de máquina de escrever (digitação e apagamento contínuo do placeholder)
   useEffect(() => {
@@ -204,23 +207,16 @@ export const ThemeSelector: React.FC<ThemeSelectorProps> = ({
               <Bot className="w-4 h-4 text-emerald-100" />
             </a>
 
-            {/* 3. Botão Inserir JSON */}
+            {/* 3. Botão Inserir JSON (Anexar arquivo ou Colar código) */}
             <button
               type="button"
-              onClick={() => jsonFileInputRef.current?.click()}
+              onClick={() => setIsJsonModalOpen(true)}
               className="p-2 sm:p-2.5 text-emerald-100 hover:text-white bg-emerald-900/85 hover:bg-emerald-800/95 backdrop-blur-md rounded-xl border border-emerald-600/50 hover:border-emerald-400/80 transition flex items-center justify-center cursor-pointer shadow-xs active:scale-[0.98] shrink-0"
-              title="Inserir arquivo JSON com frases prontas para formatar os 12 cartões e gerar PDF"
-              aria-label="Inserir arquivo JSON com frases prontas"
+              title="Importar JSON com frases prontas (anexar arquivo .json ou colar código)"
+              aria-label="Importar frases em JSON"
             >
               <FileCode className="w-4 h-4 text-emerald-100" />
             </button>
-            <input
-              type="file"
-              ref={jsonFileInputRef}
-              onChange={handleJsonChange}
-              accept=".json,application/json"
-              className="hidden"
-            />
 
             {/* 4. Botão Imprimir */}
             {onPrint && (
@@ -284,6 +280,21 @@ export const ThemeSelector: React.FC<ThemeSelectorProps> = ({
       <UserGuideModal
         isOpen={isGuideOpen}
         onClose={() => setIsGuideOpen(false)}
+      />
+
+      {/* Modal para Importar Frases em JSON (Anexar Arquivo ou Colar Código) */}
+      <JsonImportModal
+        isOpen={isJsonModalOpen}
+        onClose={() => setIsJsonModalOpen(false)}
+        onImport={(content, sourceName) => {
+          if (onImportJSONContent) {
+            return onImportJSONContent(content, sourceName);
+          }
+          if (onImportJSONFile) {
+            const file = new File([content], sourceName || 'import.json', { type: 'application/json' });
+            onImportJSONFile(file);
+          }
+        }}
       />
     </div>
   );
