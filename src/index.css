@@ -1,0 +1,175 @@
+@import url('https://fonts.cdnfonts.com/css/nexa');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Pinyon+Script&family=Italianno&family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Nexa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-nexa {
+  font-family: 'Nexa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-serif-sacred {
+  font-family: 'Nexa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-display-sacred {
+  font-family: 'Nexa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+}
+
+.font-pinyon {
+  font-family: 'Pinyon Script', 'Italianno', cursive !important;
+}
+
+.font-artistic-script {
+  font-family: 'Pinyon Script', 'Italianno', cursive !important;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+/* Posicionamento do Background de São Caetano (Responsivo) */
+.bg-sao-caetano {
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Em telas com pouca largura (< 768px), aplica o deslocamento de -150px na borda direita */
+  background-position: right -150px top;
+}
+
+@media (min-width: 768px) {
+  .bg-sao-caetano {
+    /* Em desktops e telas médias/grandes (>= 768px), mantém o alinhamento padrão */
+    background-position: right top;
+  }
+}
+
+/* Glassmorphism Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 12px 36px -4px rgba(6, 78, 59, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 8px 24px -2px rgba(6, 78, 59, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(16, 185, 129, 0.6);
+  box-shadow: 0 14px 32px -4px rgba(6, 78, 59, 0.16), 0 0 20px rgba(16, 185, 129, 0.25), inset 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+/* Glass Input (Contorno brilhante em verde litúrgico e fundo translúcido cristalino) */
+.input-gemini-neon {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 6px 20px rgba(6, 78, 59, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.85);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-gemini-neon:hover {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: rgba(16, 185, 129, 0.65);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.input-gemini-neon:focus,
+.input-gemini-neon:focus-within {
+  border-color: #059669;
+  outline: none;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4), 0 0 24px rgba(16, 185, 129, 0.35), inset 0 1px 3px rgba(255, 255, 255, 0.95);
+}
+
+/* Glass Liturgical Button (Translúcido, reflexivo com brilho neon) */
+.btn-neon-liturgical {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.8) 0%, rgba(4, 61, 46, 0.88) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 30px rgba(6, 78, 59, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  transition: all 0.25s ease;
+}
+
+.btn-neon-liturgical:hover {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.92) 0%, rgba(5, 150, 105, 0.85) 100%);
+  border-color: rgba(167, 243, 208, 0.8);
+  box-shadow: 0 12px 36px rgba(16, 185, 129, 0.45), 0 0 24px rgba(5, 150, 105, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+/* Glass Secondary Button */
+.btn-glass-secondary {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+  color: #1c1917;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05), inset 0 1px 2px rgba(255, 255, 255, 0.85);
+  transition: all 0.25s ease;
+}
+
+.btn-glass-secondary:hover {
+  background: rgba(255, 255, 255, 0.65);
+  border-color: rgba(16, 185, 129, 0.65);
+  box-shadow: 0 10px 26px rgba(16, 185, 129, 0.2), inset 0 1px 3px rgba(255, 255, 255, 0.95);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Regras de impressão para folha A4 Paisagem (297 x 210 mm) */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  #a4-printable-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 273mm !important;
+    height: 186mm !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}

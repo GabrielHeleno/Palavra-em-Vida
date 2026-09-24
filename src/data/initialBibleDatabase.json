@@ -1,0 +1,2065 @@
+{
+  "metadata": {
+    "id": "BJ",
+    "name": "Bíblia de Jerusalém",
+    "publisher": "Edições Paulus",
+    "canon": "Cânon Católico com 73 livros (inclui os deuterocanônicos: Tb, Jdt, 1-2 Mc, Sb, Eclo, Br)",
+    "numberingConvention": "Numeração católica dos Salmos e textos litúrgicos da Igreja",
+    "licenseNote": "Acervo pastoral católico completo com tipografia Nexa e limite de até 240 caracteres com sentido completo.",
+    "version": "1.3.0-nexa",
+    "isLimitedInitialSet": false,
+    "totalPassages": 118
+  },
+  "passages": [
+    {
+      "id": "BJ-CL-3-13",
+      "translationId": "BJ",
+      "book": "Colossenses",
+      "bookAbbr": "Cl",
+      "chapter": 3,
+      "verseStart": 13,
+      "displayRef": "Cl 3, 13",
+      "text": "Como o Senhor vos perdoou, assim perdoai também vós uns aos outros.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Paz e serenidade",
+        "Amor fraterno"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-EF-4-32",
+      "translationId": "BJ",
+      "book": "Efésios",
+      "bookAbbr": "Ef",
+      "chapter": 4,
+      "verseStart": 32,
+      "displayRef": "Ef 4, 32",
+      "text": "Sede bondosos e compassivos, perdoando-vos mutuamente como Deus vos perdoou em Cristo.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Misericórdia",
+        "Serviço e caridade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MT-6-14",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 6,
+      "verseStart": 14,
+      "displayRef": "Mt 6, 14",
+      "text": "Se perdoardes aos homens as suas ofensas, vosso Pai celeste também vos perdoará.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Oração e intimidade com Deus",
+        "Amor de Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-LC-6-37",
+      "translationId": "BJ",
+      "book": "Lucas",
+      "bookAbbr": "Lc",
+      "chapter": 6,
+      "verseStart": 37,
+      "displayRef": "Lc 6, 37",
+      "text": "Não julgueis e não sereis julgados; perdoai e sereis perdoados.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Misericórdia",
+        "Paz e serenidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-ECLO-28-2",
+      "translationId": "BJ",
+      "book": "Eclesiástico",
+      "bookAbbr": "Eclo",
+      "chapter": 28,
+      "verseStart": 2,
+      "displayRef": "Eclo 28, 2",
+      "text": "Perdoa ao teu próximo a injustiça, e quando orares, teus pecados serão perdoados.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Oração e intimidade com Deus",
+        "Sabedoria e discernimento"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-SL-103-12",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 103,
+      "verseStart": 12,
+      "displayRef": "Sl 103, 12",
+      "text": "Quanto dista o oriente do ocidente, tanto ele afasta de nós as nossas transgressões.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Misericórdia",
+        "Amor de Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-1JO-1-9",
+      "translationId": "BJ",
+      "book": "1 João",
+      "bookAbbr": "1Jo",
+      "chapter": 1,
+      "verseStart": 9,
+      "displayRef": "1Jo 1, 9",
+      "text": "Se confessamos nossos pecados, ele é fiel e justo para nos perdoar e purificar de toda injustiça.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Conversão e mudança de vida",
+        "Fidelidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-IS-1-18",
+      "translationId": "BJ",
+      "book": "Isaías",
+      "bookAbbr": "Is",
+      "chapter": 1,
+      "verseStart": 18,
+      "displayRef": "Is 1, 18",
+      "text": "Se os vossos pecados forem como escarlate, tornar-se-ão alvos como a neve.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Conversão e mudança de vida",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-MC-1-15",
+      "translationId": "BJ",
+      "book": "Marcos",
+      "bookAbbr": "Mc",
+      "chapter": 1,
+      "verseStart": 15,
+      "displayRef": "Mc 1, 15",
+      "text": "Cumpriu-se o tempo e o Reino de Deus está próximo: convertei-vos e crede no Evangelho!",
+      "themes": [
+        "Conversão e mudança de vida",
+        "Palavra de Deus",
+        "Disponibilidade e vocação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-2COR-5-17",
+      "translationId": "BJ",
+      "book": "2 Coríntios",
+      "bookAbbr": "2Cor",
+      "chapter": 5,
+      "verseStart": 17,
+      "displayRef": "2Cor 5, 17",
+      "text": "Se alguém está em Cristo, é nova criatura: as coisas antigas passaram, eis que tudo se fez novo.",
+      "themes": [
+        "Conversão e mudança de vida",
+        "Esperança nas dificuldades",
+        "Renovação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-EZ-36-26",
+      "translationId": "BJ",
+      "book": "Ezequiel",
+      "bookAbbr": "Ez",
+      "chapter": 36,
+      "verseStart": 26,
+      "displayRef": "Ez 36, 26",
+      "text": "Dar-vos-ei um coração novo e infundirei em vós um espírito novo; tirarei de vós o coração de pedra.",
+      "themes": [
+        "Conversão e mudança de vida",
+        "Graça",
+        "Misericórdia"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-RM-12-2",
+      "translationId": "BJ",
+      "book": "Romanos",
+      "bookAbbr": "Rm",
+      "chapter": 12,
+      "verseStart": 2,
+      "displayRef": "Rm 12, 2",
+      "text": "Não vos conformeis com este mundo, mas transformai-vos pela renovação da vossa mente.",
+      "themes": [
+        "Conversão e mudança de vida",
+        "Sabedoria e discernimento",
+        "Santidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-51-12",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 51,
+      "verseStart": 12,
+      "displayRef": "Sl 51, 12",
+      "text": "Cria em mim, ó Deus, um coração puro, e renova em mim um espírito reto.",
+      "themes": [
+        "Conversão e mudança de vida",
+        "Oração e intimidade com Deus",
+        "Perdão e reconciliação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-JL-2-12",
+      "translationId": "BJ",
+      "book": "Joel",
+      "bookAbbr": "Jl",
+      "chapter": 2,
+      "verseStart": 12,
+      "displayRef": "Jl 2, 12",
+      "text": "Voltai a mim de todo o vosso coração, com jejuns, lágrimas e gemidos.",
+      "themes": [
+        "Conversão e mudança de vida",
+        "Oração e intimidade com Deus",
+        "Penitência"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-AP-3-20",
+      "translationId": "BJ",
+      "book": "Apocalipse",
+      "bookAbbr": "Ap",
+      "chapter": 3,
+      "verseStart": 20,
+      "displayRef": "Ap 3, 20",
+      "text": "Eis que estou à porta e bato: se alguém ouvir a minha voz e abrir, entrarei em sua casa e cearei com ele.",
+      "themes": [
+        "Conversão e mudança de vida",
+        "Disponibilidade e vocação",
+        "Eucaristia e Pão da Vida"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-FP-4-13",
+      "translationId": "BJ",
+      "book": "Filipenses",
+      "bookAbbr": "Fp",
+      "chapter": 4,
+      "verseStart": 13,
+      "displayRef": "Fp 4, 13",
+      "text": "Tudo posso naquele que me fortalece.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Fé"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-23-1",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 23,
+      "verseStart": 1,
+      "displayRef": "Sl 23, 1",
+      "text": "O Senhor é o meu pastor: nada me falta.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Paz e serenidade",
+        "Amor de Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-SL-27-1",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 27,
+      "verseStart": 1,
+      "displayRef": "Sl 27, 1",
+      "text": "O Senhor é minha luz e minha salvação, a quem temerei? O Senhor é a fortaleza da minha vida.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Confiança"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-MT-11-28",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 11,
+      "verseStart": 28,
+      "displayRef": "Mt 11, 28",
+      "text": "Vinde a mim, todos vós que estais cansados e carregados de fardos, e eu vos darei descanso.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Paz e serenidade",
+        "Acolhimento"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-RM-8-31",
+      "translationId": "BJ",
+      "book": "Romanos",
+      "bookAbbr": "Rm",
+      "chapter": 8,
+      "verseStart": 31,
+      "displayRef": "Rm 8, 31",
+      "text": "Se Deus é por nós, quem será contra nós?",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Confiança"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-RM-8-28",
+      "translationId": "BJ",
+      "book": "Romanos",
+      "bookAbbr": "Rm",
+      "chapter": 8,
+      "verseStart": 28,
+      "displayRef": "Rm 8, 28",
+      "text": "Sabemos que tudo concorre para o bem daqueles que amam a Deus.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Amor de Deus",
+        "Providência divina"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-IS-41-10",
+      "translationId": "BJ",
+      "book": "Isaías",
+      "bookAbbr": "Is",
+      "chapter": 41,
+      "verseStart": 10,
+      "displayRef": "Is 41, 10",
+      "text": "Não temas, pois estou contigo; não te angusties, pois eu sou o teu Deus; eu te dou força e socorro.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Consolação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-JR-29-11",
+      "translationId": "BJ",
+      "book": "Jeremias",
+      "bookAbbr": "Jr",
+      "chapter": 29,
+      "verseStart": 11,
+      "displayRef": "Jr 29, 11",
+      "text": "Sei que projetos tenho para vós: projetos de paz e não de aflição, para vos dar um futuro e esperança.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Paz e serenidade",
+        "Providência divina"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-JO-16-33",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 16,
+      "verseStart": 33,
+      "displayRef": "Jo 16, 33",
+      "text": "No mundo tereis aflições, mas tende coragem: eu venci o mundo!",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Vitória em Cristo"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-46-2",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 46,
+      "verseStart": 2,
+      "displayRef": "Sl 46, 2",
+      "text": "Deus é para nós refúgio e fortaleza, socorro sempre pronto na tribulação.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Refúgio"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-2COR-12-9",
+      "translationId": "BJ",
+      "book": "2 Coríntios",
+      "bookAbbr": "2Cor",
+      "chapter": 12,
+      "verseStart": 9,
+      "displayRef": "2Cor 12, 9",
+      "text": "Basta-te a minha graça, porque a força se aperfeiçoa na fraqueza.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Graça"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1PD-5-7",
+      "translationId": "BJ",
+      "book": "1 Pedro",
+      "bookAbbr": "1Pd",
+      "chapter": 5,
+      "verseStart": 7,
+      "displayRef": "1Pd 5, 7",
+      "text": "Lançai sobre ele toda a vossa ansiedade, porque ele cuida de vós.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Paz e serenidade",
+        "Amor de Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-ECLO-2-5",
+      "translationId": "BJ",
+      "book": "Eclesiástico",
+      "bookAbbr": "Eclo",
+      "chapter": 2,
+      "verseStart": 5,
+      "displayRef": "Eclo 2, 5",
+      "text": "Pois o ouro é provado no fogo, e os homens aceitáveis, no crisol da humilhação.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança",
+        "Sabedoria e discernimento"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-MT-7-7",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 7,
+      "verseStart": 7,
+      "displayRef": "Mt 7, 7",
+      "text": "Pedi e vos será dado; buscai e achareis; batei e vos será aberto.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Confiança",
+        "Graça"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1TS-5-16-18",
+      "translationId": "BJ",
+      "book": "1 Tessalonicenses",
+      "bookAbbr": "1Ts",
+      "chapter": 5,
+      "verseStart": 16,
+      "verseEnd": 18,
+      "displayRef": "1Ts 5, 16-18",
+      "text": "Estai sempre alegres. Orai sem cessar. Em todas as circunstâncias dai graças.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Paz e serenidade",
+        "Ação de graças"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-FP-4-6",
+      "translationId": "BJ",
+      "book": "Filipenses",
+      "bookAbbr": "Fp",
+      "chapter": 4,
+      "verseStart": 6,
+      "displayRef": "Fp 4, 6",
+      "text": "Não vos inquieteis com nada; em tudo apresentai a Deus as vossas súplicas com ação de graças.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Paz e serenidade",
+        "Confiança"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-145-18",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 145,
+      "verseStart": 18,
+      "displayRef": "Sl 145, 18",
+      "text": "Perto está o Senhor de quantos o invocam, de todos os que o invocam em verdade.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Verdade",
+        "Presença de Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-TG-4-8",
+      "translationId": "BJ",
+      "book": "Tiago",
+      "bookAbbr": "Tg",
+      "chapter": 4,
+      "verseStart": 8,
+      "displayRef": "Tg 4, 8",
+      "text": "Aproximai-vos de Deus, e ele se aproximará de vós.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Conversão e mudança de vida",
+        "Comunhão"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-RM-12-12",
+      "translationId": "BJ",
+      "book": "Romanos",
+      "bookAbbr": "Rm",
+      "chapter": 12,
+      "verseStart": 12,
+      "displayRef": "Rm 12, 12",
+      "text": "Sede alegres na esperança, pacientes na tribulação e perseverantes na oração.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Esperança nas dificuldades",
+        "Fortaleza e perseverança"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-ECLO-35-17",
+      "translationId": "BJ",
+      "book": "Eclesiástico",
+      "bookAbbr": "Eclo",
+      "chapter": 35,
+      "verseStart": 17,
+      "displayRef": "Eclo 35, 17",
+      "text": "A prece do humilde atravessa as nuvens e ele não se consolará enquanto ela não chegar.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Humildade",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-TB-12-8",
+      "translationId": "BJ",
+      "book": "Tobias",
+      "bookAbbr": "Tb",
+      "chapter": 12,
+      "verseStart": 8,
+      "displayRef": "Tb 12, 8",
+      "text": "Boa é a oração com jejum, e a esmola com justiça é melhor que a riqueza com iniquidade.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Serviço e caridade",
+        "Justiça"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-1COR-13-13",
+      "translationId": "BJ",
+      "book": "1 Coríntios",
+      "bookAbbr": "1Cor",
+      "chapter": 13,
+      "verseStart": 13,
+      "displayRef": "1Cor 13, 13",
+      "text": "Agora permanecem estas três coisas: a fé, a esperança e o amor; porém a maior delas é o amor.",
+      "themes": [
+        "Serviço e caridade",
+        "Amor de Deus",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1COR-16-14",
+      "translationId": "BJ",
+      "book": "1 Coríntios",
+      "bookAbbr": "1Cor",
+      "chapter": 16,
+      "verseStart": 14,
+      "displayRef": "1Cor 16, 14",
+      "text": "Todas as vossas ações sejam feitas com amor.",
+      "themes": [
+        "Serviço e caridade",
+        "Santidade",
+        "Comunidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-JO-15-12",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 15,
+      "verseStart": 12,
+      "displayRef": "Jo 15, 12",
+      "text": "Este é o meu mandamento: que vos ameis uns aos outros assim como eu vos amei.",
+      "themes": [
+        "Serviço e caridade",
+        "Amor de Deus",
+        "Fraternidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1JO-3-18",
+      "translationId": "BJ",
+      "book": "1 João",
+      "bookAbbr": "1Jo",
+      "chapter": 3,
+      "verseStart": 18,
+      "displayRef": "1Jo 3, 18",
+      "text": "Filhinhos, não amemos de palavra nem de língua, mas por atos e em verdade.",
+      "themes": [
+        "Serviço e caridade",
+        "Verdade",
+        "Conversão e mudança de vida"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1JO-4-8",
+      "translationId": "BJ",
+      "book": "1 João",
+      "bookAbbr": "1Jo",
+      "chapter": 4,
+      "verseStart": 8,
+      "displayRef": "1Jo 4, 8",
+      "text": "Aquele que não ama não conheceu a Deus, porque Deus é amor.",
+      "themes": [
+        "Serviço e caridade",
+        "Amor de Deus",
+        "Oração e intimidade com Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1JO-4-19",
+      "translationId": "BJ",
+      "book": "1 João",
+      "bookAbbr": "1Jo",
+      "chapter": 4,
+      "verseStart": 19,
+      "displayRef": "1Jo 4, 19",
+      "text": "Nós amamos porque ele nos amou primeiro.",
+      "themes": [
+        "Serviço e caridade",
+        "Amor de Deus",
+        "Gratidão"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-AT-20-35",
+      "translationId": "BJ",
+      "book": "Atos dos Apóstolos",
+      "bookAbbr": "At",
+      "chapter": 20,
+      "verseStart": 35,
+      "displayRef": "At 20, 35",
+      "text": "Há maior felicidade em dar do que em receber.",
+      "themes": [
+        "Serviço e caridade",
+        "Generosidade",
+        "Alegria"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-GL-6-2",
+      "translationId": "BJ",
+      "book": "Gálatas",
+      "bookAbbr": "Gl",
+      "chapter": 6,
+      "verseStart": 2,
+      "displayRef": "Gl 6, 2",
+      "text": "Carregai os fardos uns dos outros e assim cumprireis a lei de Cristo.",
+      "themes": [
+        "Serviço e caridade",
+        "Fraternidade",
+        "Solidariedade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-TB-4-7",
+      "translationId": "BJ",
+      "book": "Tobias",
+      "bookAbbr": "Tb",
+      "chapter": 4,
+      "verseStart": 7,
+      "displayRef": "Tb 4, 7",
+      "text": "Dá esmola de teus bens; se vires um pobre, não desvies dele o teu rosto.",
+      "themes": [
+        "Serviço e caridade",
+        "Solidariedade",
+        "Generosidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-2COR-9-7",
+      "translationId": "BJ",
+      "book": "2 Coríntios",
+      "bookAbbr": "2Cor",
+      "chapter": 9,
+      "verseStart": 7,
+      "displayRef": "2Cor 9, 7",
+      "text": "Cada um dê conforme decidiu no coração, pois Deus ama quem dá com alegria.",
+      "themes": [
+        "Serviço e caridade",
+        "Generosidade",
+        "Alegria"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-LC-6-38",
+      "translationId": "BJ",
+      "book": "Lucas",
+      "bookAbbr": "Lc",
+      "chapter": 6,
+      "verseStart": 38,
+      "displayRef": "Lc 6, 38",
+      "text": "Dai e vos será dado: uma medida boa, calcada e transbordante será derramada no vosso regaço.",
+      "themes": [
+        "Serviço e caridade",
+        "Generosidade",
+        "Misericórdia"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-JO-14-27",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 14,
+      "verseStart": 27,
+      "displayRef": "Jo 14, 27",
+      "text": "Deixo-vos a paz, a minha paz vos dou; não vo-la dou como o mundo a dá. Não se perturbe o vosso coração.",
+      "themes": [
+        "Paz e serenidade",
+        "Esperança nas dificuldades",
+        "Consolação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-FP-4-7",
+      "translationId": "BJ",
+      "book": "Filipenses",
+      "bookAbbr": "Fp",
+      "chapter": 4,
+      "verseStart": 7,
+      "displayRef": "Fp 4, 7",
+      "text": "A paz de Deus, que excede todo entendimento, guardará os vossos corações e vossos pensamentos em Cristo.",
+      "themes": [
+        "Paz e serenidade",
+        "Oração e intimidade com Deus",
+        "Confiança"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MT-5-9",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 5,
+      "verseStart": 9,
+      "displayRef": "Mt 5, 9",
+      "text": "Bem-aventurados os que promovem a paz, porque serão chamados filhos de Deus.",
+      "themes": [
+        "Paz e serenidade",
+        "Serviço e caridade",
+        "Filiação divina"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-RM-12-18",
+      "translationId": "BJ",
+      "book": "Romanos",
+      "bookAbbr": "Rm",
+      "chapter": 12,
+      "verseStart": 18,
+      "displayRef": "Rm 12, 18",
+      "text": "Se possível, quanto depender de vós, vivei em paz com todos os homens.",
+      "themes": [
+        "Paz e serenidade",
+        "Perdão e reconciliação",
+        "Fraternidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-CL-3-15",
+      "translationId": "BJ",
+      "book": "Colossenses",
+      "bookAbbr": "Cl",
+      "chapter": 3,
+      "verseStart": 15,
+      "displayRef": "Cl 3, 15",
+      "text": "Que a paz de Cristo reine em vossos corações, para a qual fostes chamados num só corpo. E sede agradecidos.",
+      "themes": [
+        "Paz e serenidade",
+        "Comunidade",
+        "Ação de graças"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-4-9",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 4,
+      "verseStart": 9,
+      "displayRef": "Sl 4, 9",
+      "text": "Em paz me deito e logo adormeço, porque só tu, Senhor, me fazes viver em segurança.",
+      "themes": [
+        "Paz e serenidade",
+        "Confiança",
+        "Descanso em Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-CL-3-14",
+      "translationId": "BJ",
+      "book": "Colossenses",
+      "bookAbbr": "Cl",
+      "chapter": 3,
+      "verseStart": 14,
+      "displayRef": "Cl 3, 14",
+      "text": "Acima de tudo isto, porém, revesti-vos do amor, que é o laço da perfeição.",
+      "themes": [
+        "Família e matrimônio",
+        "Serviço e caridade",
+        "União"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-ECLO-6-14",
+      "translationId": "BJ",
+      "book": "Eclesiástico",
+      "bookAbbr": "Eclo",
+      "chapter": 6,
+      "verseStart": 14,
+      "displayRef": "Eclo 6, 14",
+      "text": "Um amigo fiel é uma proteção poderosa; quem o encontrou, encontrou um tesouro.",
+      "themes": [
+        "Família e matrimônio",
+        "Fidelidade",
+        "Fraternidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-EF-4-2",
+      "translationId": "BJ",
+      "book": "Efésios",
+      "bookAbbr": "Ef",
+      "chapter": 4,
+      "verseStart": 2,
+      "displayRef": "Ef 4, 2",
+      "text": "Com toda humildade e mansidão, com paciência, suportai-vos uns aos outros no amor.",
+      "themes": [
+        "Família e matrimônio",
+        "Paciência",
+        "Perdão e reconciliação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1PD-4-8",
+      "translationId": "BJ",
+      "book": "1 Pedro",
+      "bookAbbr": "1Pd",
+      "chapter": 4,
+      "verseStart": 8,
+      "displayRef": "1Pd 4, 8",
+      "text": "Sobretudo, cultivai um amor ardente uns para com os outros, pois o amor cobre multidão de pecados.",
+      "themes": [
+        "Família e matrimônio",
+        "Perdão e reconciliação",
+        "Serviço e caridade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-127-1",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 127,
+      "verseStart": 1,
+      "displayRef": "Sl 127, 1",
+      "text": "Se o Senhor não edificar a casa, em vão trabalham os que a constroem.",
+      "themes": [
+        "Família e matrimônio",
+        "Confiança",
+        "Bênção no lar"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-JS-24-15",
+      "translationId": "BJ",
+      "book": "Josué",
+      "bookAbbr": "Js",
+      "chapter": 24,
+      "verseStart": 15,
+      "displayRef": "Js 24, 15",
+      "text": "Eu e a minha casa serviremos ao Senhor.",
+      "themes": [
+        "Família e matrimônio",
+        "Disponibilidade e vocação",
+        "Fidelidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-JO-6-35",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 6,
+      "verseStart": 35,
+      "displayRef": "Jo 6, 35",
+      "text": "Eu sou o pão da vida: quem vem a mim não terá fome, e quem crê em mim nunca terá sede.",
+      "themes": [
+        "Eucaristia e Pão da Vida",
+        "Fé",
+        "Alimento espiritual"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-JO-6-51",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 6,
+      "verseStart": 51,
+      "displayRef": "Jo 6, 51",
+      "text": "Eu sou o pão vivo descido do céu. Quem comer deste pão viverá eternamente.",
+      "themes": [
+        "Eucaristia e Pão da Vida",
+        "Vida eterna",
+        "Comunhão"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MT-26-26",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 26,
+      "verseStart": 26,
+      "displayRef": "Mt 26, 26",
+      "text": "Jesus tomou o pão, abençoou-o, partiu-o e deu-o aos discípulos, dizendo: 'Tomai e comei; isto é o meu corpo'.",
+      "themes": [
+        "Eucaristia e Pão da Vida",
+        "Ceia do Senhor",
+        "Memorial"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1COR-11-26",
+      "translationId": "BJ",
+      "book": "1 Coríntios",
+      "bookAbbr": "1Cor",
+      "chapter": 11,
+      "verseStart": 26,
+      "displayRef": "1Cor 11, 26",
+      "text": "Cada vez que comeis deste pão e bebeis deste cálice, anunciais a morte do Senhor até que ele venha.",
+      "themes": [
+        "Eucaristia e Pão da Vida",
+        "Memorial",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1COR-10-17",
+      "translationId": "BJ",
+      "book": "1 Coríntios",
+      "bookAbbr": "1Cor",
+      "chapter": 10,
+      "verseStart": 17,
+      "displayRef": "1Cor 10, 17",
+      "text": "Porque há um só pão, nós, embora muitos, somos um só corpo, pois todos participamos desse único pão.",
+      "themes": [
+        "Eucaristia e Pão da Vida",
+        "Comunidade",
+        "Unidade da Igreja"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-IS-6-8",
+      "translationId": "BJ",
+      "book": "Isaías",
+      "bookAbbr": "Is",
+      "chapter": 6,
+      "verseStart": 8,
+      "displayRef": "Is 6, 8",
+      "text": "Ouvi a voz do Senhor que dizia: 'Quem enviarei?' Respondi: 'Eis-me aqui, envia-me!'",
+      "themes": [
+        "Disponibilidade e vocação",
+        "Envio",
+        "Serviço e caridade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-LC-1-38",
+      "translationId": "BJ",
+      "book": "Lucas",
+      "bookAbbr": "Lc",
+      "chapter": 1,
+      "verseStart": 38,
+      "displayRef": "Lc 1, 38",
+      "text": "Disse Maria: 'Eis aqui a serva do Senhor; faça-se em mim segundo a tua palavra'.",
+      "themes": [
+        "Disponibilidade e vocação",
+        "Fidelidade",
+        "Humildade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1SM-3-10",
+      "translationId": "BJ",
+      "book": "1 Samuel",
+      "bookAbbr": "1Sm",
+      "chapter": 3,
+      "verseStart": 10,
+      "displayRef": "1Sm 3, 10",
+      "text": "Veio o Senhor e chamou: 'Samuel, Samuel!' E Samuel respondeu: 'Fala, que teu servo escuta'.",
+      "themes": [
+        "Disponibilidade e vocação",
+        "Escuta da Palavra",
+        "Oração e intimidade com Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-JO-15-16",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 15,
+      "verseStart": 16,
+      "displayRef": "Jo 15, 16",
+      "text": "Não fostes vós que me escolhestes; fui eu que vos escolhi e vos constituí para produzirdes fruto.",
+      "themes": [
+        "Disponibilidade e vocação",
+        "Eleição divina",
+        "Serviço e caridade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MC-10-45",
+      "translationId": "BJ",
+      "book": "Marcos",
+      "bookAbbr": "Mc",
+      "chapter": 10,
+      "verseStart": 45,
+      "displayRef": "Mc 10, 45",
+      "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos.",
+      "themes": [
+        "Disponibilidade e vocação",
+        "Serviço e caridade",
+        "Humildade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-119-105",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 119,
+      "verseStart": 105,
+      "displayRef": "Sl 119, 105",
+      "text": "Tua palavra é lâmpada para os meus pés e luz para o meu caminho.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Palavra de Deus",
+        "Oração e intimidade com Deus"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-PR-3-5",
+      "translationId": "BJ",
+      "book": "Provérbios",
+      "bookAbbr": "Pr",
+      "chapter": 3,
+      "verseStart": 5,
+      "displayRef": "Pr 3, 5",
+      "text": "Confia no Senhor de todo o teu coração e não te apoies na tua própria inteligência.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Confiança",
+        "Humildade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-PR-16-3",
+      "translationId": "BJ",
+      "book": "Provérbios",
+      "bookAbbr": "Pr",
+      "chapter": 16,
+      "verseStart": 3,
+      "displayRef": "Pr 16, 3",
+      "text": "Confia ao Senhor as tuas obras e os teus projetos serão estabelecidos.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Confiança",
+        "Trabalho e planos"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-TG-1-5",
+      "translationId": "BJ",
+      "book": "Tiago",
+      "bookAbbr": "Tg",
+      "chapter": 1,
+      "verseStart": 5,
+      "displayRef": "Tg 1, 5",
+      "text": "Se a algum de vós falta sabedoria, peça-a a Deus, que a todos dá generosamente, e ela lhe será dada.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Oração e intimidade com Deus",
+        "Graça"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SB-9-4",
+      "translationId": "BJ",
+      "book": "Sabedoria",
+      "bookAbbr": "Sb",
+      "chapter": 9,
+      "verseStart": 4,
+      "displayRef": "Sb 9, 4",
+      "text": "Dá-me a sabedoria que partilha do teu trono, e não me excluas do número de teus filhos.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Oração e intimidade com Deus",
+        "Graça"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-SB-1-1",
+      "translationId": "BJ",
+      "book": "Sabedoria",
+      "bookAbbr": "Sb",
+      "chapter": 1,
+      "verseStart": 1,
+      "displayRef": "Sb 1, 1",
+      "text": "Amai a justiça, vós que governais a terra; tende sobre o Senhor sentimentos retos.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Justiça",
+        "Retidão"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-BR-3-9",
+      "translationId": "BJ",
+      "book": "Baruc",
+      "bookAbbr": "Br",
+      "chapter": 3,
+      "verseStart": 9,
+      "displayRef": "Br 3, 9",
+      "text": "Ouve, ó Israel, os mandamentos da vida! Presta atenção, para aprenderes a prudência!",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Palavra de Deus",
+        "Conversão e mudança de vida"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-TG-1-19",
+      "translationId": "BJ",
+      "book": "Tiago",
+      "bookAbbr": "Tg",
+      "chapter": 1,
+      "verseStart": 19,
+      "displayRef": "Tg 1, 19",
+      "text": "Todo homem seja pronto para ouvir, tardio para falar e tardio para irar-se.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Paciência",
+        "Paz e serenidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MT-6-33",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 6,
+      "verseStart": 33,
+      "displayRef": "Mt 6, 33",
+      "text": "Buscai em primeiro lugar o Reino de Deus e a sua justiça, e tudo mais vos será dado por acréscimo.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Confiança",
+        "Providência divina"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-103-8",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 103,
+      "verseStart": 8,
+      "displayRef": "Sl 103, 8",
+      "text": "O Senhor é clemente e compassivo, paciente e rico em misericórdia.",
+      "themes": [
+        "Amor de Deus",
+        "Misericórdia",
+        "Paciência"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-SL-103-13",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 103,
+      "verseStart": 13,
+      "displayRef": "Sl 103, 13",
+      "text": "Como um pai tem compaixão de seus filhos, assim o Senhor tem compaixão dos que o temem.",
+      "themes": [
+        "Amor de Deus",
+        "Família e matrimônio",
+        "Misericórdia"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-IS-49-15",
+      "translationId": "BJ",
+      "book": "Isaías",
+      "bookAbbr": "Is",
+      "chapter": 49,
+      "verseStart": 15,
+      "displayRef": "Is 49, 15",
+      "text": "Pode uma mulher esquecer-se do filho que amamenta? Pois ainda que ela se esquecesse, eu não te esquecerei.",
+      "themes": [
+        "Amor de Deus",
+        "Consolação",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-SB-11-24",
+      "translationId": "BJ",
+      "book": "Sabedoria",
+      "bookAbbr": "Sb",
+      "chapter": 11,
+      "verseStart": 24,
+      "displayRef": "Sb 11, 24",
+      "text": "Amas tudo o que existe e não desprezas nada do que criaste.",
+      "themes": [
+        "Amor de Deus",
+        "Criação",
+        "Misericórdia"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-LC-15-7",
+      "translationId": "BJ",
+      "book": "Lucas",
+      "bookAbbr": "Lc",
+      "chapter": 15,
+      "verseStart": 7,
+      "displayRef": "Lc 15, 7",
+      "text": "Haverá maior alegria no céu por um só pecador que se converte do que por noventa e nove justos.",
+      "themes": [
+        "Amor de Deus",
+        "Conversão e mudança de vida",
+        "Perdão e reconciliação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-LC-12-32",
+      "translationId": "BJ",
+      "book": "Lucas",
+      "bookAbbr": "Lc",
+      "chapter": 12,
+      "verseStart": 32,
+      "displayRef": "Lc 12, 32",
+      "text": "Não temas, pequeno rebanho, porque foi do agrado do vosso Pai dar-vos o Reino.",
+      "themes": [
+        "Amor de Deus",
+        "Esperança nas dificuldades",
+        "Paz e serenidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-LC-1-37",
+      "translationId": "BJ",
+      "book": "Lucas",
+      "bookAbbr": "Lc",
+      "chapter": 1,
+      "verseStart": 37,
+      "displayRef": "Lc 1, 37",
+      "text": "Para Deus, com efeito, nada é impossível.",
+      "themes": [
+        "Amor de Deus",
+        "Esperança nas dificuldades",
+        "Fé"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1JO-3-1",
+      "translationId": "BJ",
+      "book": "1 João",
+      "bookAbbr": "1Jo",
+      "chapter": 3,
+      "verseStart": 1,
+      "displayRef": "1Jo 3, 1",
+      "text": "Vede que amor o Pai nos dispensou: sermos chamados filhos de Deus! E nós o somos!",
+      "themes": [
+        "Amor de Deus",
+        "Filiação divina",
+        "Graça"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-JO-3-16",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 3,
+      "verseStart": 16,
+      "displayRef": "Jo 3, 16",
+      "text": "Tanto amou Deus o mundo, que lhe deu o seu Filho único, para que todo o que crer nele tenha a vida eterna.",
+      "themes": [
+        "Amor de Deus",
+        "Salvação",
+        "Vida eterna"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-HB-12-1-2",
+      "translationId": "BJ",
+      "book": "Hebreus",
+      "bookAbbr": "Hb",
+      "chapter": 12,
+      "verseStart": 1,
+      "verseEnd": 2,
+      "displayRef": "Hb 12, 1-2",
+      "text": "Corramos com perseverança a corrida proposta, com os olhos fixos em Jesus, autor da nossa fé.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Fé",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-HB-11-1",
+      "translationId": "BJ",
+      "book": "Hebreus",
+      "bookAbbr": "Hb",
+      "chapter": 11,
+      "verseStart": 1,
+      "displayRef": "Hb 11, 1",
+      "text": "A fé é a garantia dos bens que se esperam, a prova das realidades que não se veem.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Fé",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-IS-40-31",
+      "translationId": "BJ",
+      "book": "Isaías",
+      "bookAbbr": "Is",
+      "chapter": 40,
+      "verseStart": 31,
+      "displayRef": "Is 40, 31",
+      "text": "Os que esperam no Senhor renovam suas forças; sobem com asas de águia, correm e não se cansam.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Esperança nas dificuldades",
+        "Renovação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-2TM-1-7",
+      "translationId": "BJ",
+      "book": "2 Timóteo",
+      "bookAbbr": "2Tm",
+      "chapter": 1,
+      "verseStart": 7,
+      "displayRef": "2Tm 1, 7",
+      "text": "Deus não nos deu um espírito de timidez, mas de força, de amor e de bom senso.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Sabedoria e discernimento",
+        "Graça"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-GL-6-9",
+      "translationId": "BJ",
+      "book": "Gálatas",
+      "bookAbbr": "Gl",
+      "chapter": 6,
+      "verseStart": 9,
+      "displayRef": "Gl 6, 9",
+      "text": "Não nos cansemos de fazer o bem, pois a seu tempo colheremos, se não tivermos esmorecido.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Serviço e caridade",
+        "Esperança nas dificuldades"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-34-19",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 34,
+      "verseStart": 19,
+      "displayRef": "Sl 34, 19",
+      "text": "O Senhor está perto dos que têm o coração quebrantado e salva os de espírito abatido.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Esperança nas dificuldades",
+        "Consolação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-SL-121-1-2",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 121,
+      "verseStart": 1,
+      "verseEnd": 2,
+      "displayRef": "Sl 121, 1-2",
+      "text": "Elevo meus olhos para os montes: donde virá o meu socorro? O meu socorro vem do Senhor.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Esperança nas dificuldades",
+        "Refúgio"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-AP-21-4",
+      "translationId": "BJ",
+      "book": "Apocalipse",
+      "bookAbbr": "Ap",
+      "chapter": 21,
+      "verseStart": 4,
+      "displayRef": "Ap 21, 4",
+      "text": "Ele enxugará toda lágrima dos seus olhos; não haverá mais morte, nem luto, nem pranto, nem dor.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Esperança nas dificuldades",
+        "Consolação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1MC-3-19",
+      "translationId": "BJ",
+      "book": "1 Macabeus",
+      "bookAbbr": "1Mc",
+      "chapter": 3,
+      "verseStart": 19,
+      "displayRef": "1Mc 3, 19",
+      "text": "A vitória no combate não depende da multidão do exército, mas da força que vem do Céu.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Confiança",
+        "Fé"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-MT-5-8",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 5,
+      "verseStart": 8,
+      "displayRef": "Mt 5, 8",
+      "text": "Bem-aventurados os puros de coração, porque verão a Deus.",
+      "themes": [
+        "Santidade",
+        "Conversão e mudança de vida",
+        "Sabedoria e discernimento"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MT-5-7",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 5,
+      "verseStart": 7,
+      "displayRef": "Mt 5, 7",
+      "text": "Bem-aventurados os misericordiosos, porque alcançarão misericórdia.",
+      "themes": [
+        "Misericórdia",
+        "Perdão e reconciliação",
+        "Serviço e caridade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-GL-5-22",
+      "translationId": "BJ",
+      "book": "Gálatas",
+      "bookAbbr": "Gl",
+      "chapter": 5,
+      "verseStart": 22,
+      "displayRef": "Gl 5, 22",
+      "text": "O fruto do Espírito é: amor, alegria, paz, paciência, amabilidade, bondade, fidelidade.",
+      "themes": [
+        "Paz e serenidade",
+        "Santidade",
+        "Sabedoria e discernimento"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-RM-12-21",
+      "translationId": "BJ",
+      "book": "Romanos",
+      "bookAbbr": "Rm",
+      "chapter": 12,
+      "verseStart": 21,
+      "displayRef": "Rm 12, 21",
+      "text": "Não te deixes vencer pelo mal, mas vence o mal com o bem.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Serviço e caridade",
+        "Paz e serenidade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MQ-6-8",
+      "translationId": "BJ",
+      "book": "Miqueias",
+      "bookAbbr": "Mq",
+      "chapter": 6,
+      "verseStart": 8,
+      "displayRef": "Mq 6, 8",
+      "text": "O que o Senhor exige de ti: praticar a justiça, amar a misericórdia e caminhar humildemente com teu Deus.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Misericórdia",
+        "Serviço e caridade"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-JO-8-12",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 8,
+      "verseStart": 12,
+      "displayRef": "Jo 8, 12",
+      "text": "Eu sou a luz do mundo; quem me segue não andará nas trevas, mas terá a luz da vida.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Esperança nas dificuldades",
+        "Disponibilidade e vocação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-JO-10-11",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 10,
+      "verseStart": 11,
+      "displayRef": "Jo 10, 11",
+      "text": "Eu sou o bom pastor. O bom pastor dá a sua vida pelas suas ovelhas.",
+      "themes": [
+        "Amor de Deus",
+        "Serviço e caridade",
+        "Salvação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-JO-14-6",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 14,
+      "verseStart": 6,
+      "displayRef": "Jo 14, 6",
+      "text": "Jesus disse: 'Eu sou o Caminho, a Verdade e a Vida. Ninguém vem ao Pai a não ser por mim'.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Salvação",
+        "Disponibilidade e vocação"
+      ],
+      "dbVersion": "1.2.0-concise",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-1COR-13-4-7",
+      "translationId": "BJ",
+      "book": "1 Coríntios",
+      "bookAbbr": "1Cor",
+      "chapter": 13,
+      "verseStart": 4,
+      "verseEnd": 7,
+      "displayRef": "1Cor 13, 4.7",
+      "text": "O amor é paciente, é prestativo; não é invejoso, não se orgulha. Tudo desculpa, tudo crê, tudo espera, tudo suporta. O amor jamais acabará.",
+      "themes": [
+        "Serviço e caridade",
+        "Amor de Deus",
+        "Paz e serenidade",
+        "Família e matrimônio"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-23-1-3",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 23,
+      "verseStart": 1,
+      "verseEnd": 2,
+      "displayRef": "Sl 23, 1-2",
+      "text": "O Senhor é o meu pastor: nada me falta. Em verdes pastagens me faz repousar; conduz-me junto às águas tranquilas e restaura as minhas forças.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Paz e serenidade",
+        "Amor de Deus",
+        "Confiança"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-LC-1-46-49",
+      "translationId": "BJ",
+      "book": "Lucas",
+      "bookAbbr": "Lc",
+      "chapter": 1,
+      "verseStart": 46,
+      "verseEnd": 48,
+      "displayRef": "Lc 1, 46-48",
+      "text": "A minha alma engrandece o Senhor, e o meu espírito se alegra em Deus, meu Salvador, porque olhou para a humildade de sua serva. Doravante serei chamada bem-aventurada.",
+      "themes": [
+        "Oração e intimidade com Deus",
+        "Humildade",
+        "Disponibilidade e vocação",
+        "Ação de graças"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-EF-4-31-32",
+      "translationId": "BJ",
+      "book": "Efésios",
+      "bookAbbr": "Ef",
+      "chapter": 4,
+      "verseStart": 32,
+      "verseEnd": 32,
+      "displayRef": "Ef 4, 32",
+      "text": "Sede bondosos e compassivos, perdoando-vos mutuamente, como Deus vos perdoou em Cristo.",
+      "themes": [
+        "Perdão e reconciliação",
+        "Paz e serenidade",
+        "Misericórdia",
+        "Conversão e mudança de vida"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-MT-5-3-6",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 5,
+      "verseStart": 3,
+      "verseEnd": 4,
+      "displayRef": "Mt 5, 3-4",
+      "text": "Bem-aventurados os pobres de espírito, porque deles é o Reino dos Céus. Bem-aventurados os aflitos, porque serão consolados.",
+      "themes": [
+        "Santidade",
+        "Esperança nas dificuldades",
+        "Sabedoria e discernimento",
+        "Justiça"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-JO-15-9-11",
+      "translationId": "BJ",
+      "book": "João",
+      "bookAbbr": "Jo",
+      "chapter": 15,
+      "verseStart": 9,
+      "verseEnd": 11,
+      "displayRef": "Jo 15, 9.11",
+      "text": "Como o Pai me amou, também eu vos amei: permanecei no meu amor. Disse-vos estas coisas para que a vossa alegria seja completa.",
+      "themes": [
+        "Amor de Deus",
+        "Paz e serenidade",
+        "Fidelidade",
+        "Comunhão"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-ECLO-2-1-3",
+      "translationId": "BJ",
+      "book": "Eclesiástico",
+      "bookAbbr": "Eclo",
+      "chapter": 2,
+      "verseStart": 1,
+      "verseEnd": 2,
+      "displayRef": "Eclo 2, 1-2",
+      "text": "Meu filho, se te apresentas para servir ao Senhor, prepara a tua alma para a provação. Tem o coração reto e sê constante na adversidade.",
+      "themes": [
+        "Fortaleza e perseverança",
+        "Esperança nas dificuldades",
+        "Sabedoria e discernimento",
+        "Fidelidade"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-TB-4-7-8",
+      "translationId": "BJ",
+      "book": "Tobias",
+      "bookAbbr": "Tb",
+      "chapter": 4,
+      "verseStart": 7,
+      "verseEnd": 7,
+      "displayRef": "Tb 4, 7",
+      "text": "Dá esmola de teus bens; se vires um pobre, não desvies o teu rosto, para que Deus não desvie o seu de ti. Sê generoso conforme tuas posses.",
+      "themes": [
+        "Serviço e caridade",
+        "Solidariedade",
+        "Generosidade",
+        "Misericórdia"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-SB-7-26-27",
+      "translationId": "BJ",
+      "book": "Sabedoria",
+      "bookAbbr": "Sb",
+      "chapter": 7,
+      "verseStart": 26,
+      "verseEnd": 26,
+      "displayRef": "Sb 7, 26",
+      "text": "A Sabedoria é o reflexo da luz eterna, espelho sem mancha da atividade de Deus e imagem da sua bondade.",
+      "themes": [
+        "Sabedoria e discernimento",
+        "Santidade",
+        "Luz divina",
+        "Graça"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "AT",
+      "isDeuterocanonical": true
+    },
+    {
+      "id": "BJ-MT-6-25-26",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 6,
+      "verseStart": 26,
+      "verseEnd": 26,
+      "displayRef": "Mt 6, 26",
+      "text": "Olhai as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; e vosso Pai celeste as alimenta. Não valeis vós mais do que elas?",
+      "themes": [
+        "Paz e serenidade",
+        "Esperança nas dificuldades",
+        "Confiança",
+        "Amor de Deus"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-FP-4-6-7",
+      "translationId": "BJ",
+      "book": "Filipenses",
+      "bookAbbr": "Fp",
+      "chapter": 4,
+      "verseStart": 6,
+      "verseEnd": 6,
+      "displayRef": "Fp 4, 6",
+      "text": "Não vos inquieteis com nada; apresentai as vossas súplicas a Deus com orações, pedidos e ações de graças.",
+      "themes": [
+        "Paz e serenidade",
+        "Oração e intimidade com Deus",
+        "Confiança"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-RM-8-38-39",
+      "translationId": "BJ",
+      "book": "Romanos",
+      "bookAbbr": "Rm",
+      "chapter": 8,
+      "verseStart": 38,
+      "verseEnd": 39,
+      "displayRef": "Rm 8, 38-39",
+      "text": "Tenho certeza de que nem a morte, nem a vida, nem presentes nem futuros, nem qualquer outra criatura poderá nos separar do amor de Deus que está em Cristo Jesus, nosso Senhor.",
+      "themes": [
+        "Amor de Deus",
+        "Fortaleza e perseverança",
+        "Esperança nas dificuldades",
+        "Fé"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    },
+    {
+      "id": "BJ-SL-103-1-3",
+      "translationId": "BJ",
+      "book": "Salmos",
+      "bookAbbr": "Sl",
+      "chapter": 103,
+      "verseStart": 1,
+      "verseEnd": 2,
+      "displayRef": "Sl 103, 1-2",
+      "text": "Bendize, ó minha alma, ao Senhor, e todo o meu ser bendiga o seu santo nome! Bendize ao Senhor e não esqueças nenhum de seus benefícios!",
+      "themes": [
+        "Perdão e reconciliação",
+        "Oração e intimidade com Deus",
+        "Ação de graças",
+        "Misericórdia"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "AT"
+    },
+    {
+      "id": "BJ-MT-11-28-30",
+      "translationId": "BJ",
+      "book": "Mateus",
+      "bookAbbr": "Mt",
+      "chapter": 11,
+      "verseStart": 28,
+      "verseEnd": 28,
+      "displayRef": "Mt 11, 28",
+      "text": "Vinde a mim, todos vós que estais cansados e fatigados pelo peso do fardo, e eu vos darei descanso.",
+      "themes": [
+        "Esperança nas dificuldades",
+        "Paz e serenidade",
+        "Acolhimento",
+        "Humildade"
+      ],
+      "dbVersion": "1.3.0-nexa",
+      "testament": "NT"
+    }
+  ]
+}

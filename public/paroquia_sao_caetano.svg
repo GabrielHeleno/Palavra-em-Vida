@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none">
+  <defs>
+    <!-- Gradiente de Fundo do Cartucho Barroco -->
+    <radialGradient id="scBgGrad" cx="50%" cy="42%" r="52%">
+      <stop offset="0%" stop-color="#1d7c63"/>
+      <stop offset="40%" stop-color="#115443"/>
+      <stop offset="75%" stop-color="#0a372b"/>
+      <stop offset="100%" stop-color="#051f18"/>
+    </radialGradient>
+
+    <!-- Gradiente Dourado para Moldura e Traços -->
+    <linearGradient id="scGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c89b48"/>
+      <stop offset="20%" stop-color="#fbe29f"/>
+      <stop offset="45%" stop-color="#be8c36"/>
+      <stop offset="75%" stop-color="#fad480"/>
+      <stop offset="100%" stop-color="#8e611e"/>
+    </linearGradient>
+
+    <!-- Ouro claro para traços finos e detalhes -->
+    <linearGradient id="scGoldLines" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff0cb"/>
+      <stop offset="50%" stop-color="#f3d38e"/>
+      <stop offset="100%" stop-color="#d5a44a"/>
+    </linearGradient>
+
+    <!-- Sombra sutil -->
+    <filter id="scShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- CARTUCHO BARROCO DE MINAS GERAIS -->
+  <g filter="url(#scShadow)">
+    <!-- Moldura Externa Dourada -->
+    <path d="M 250 28 
+             C 272 52 308 50 334 64 
+             C 360 80 368 108 388 130 
+             C 410 152 436 166 438 194 
+             C 440 224 412 242 400 268 
+             C 388 294 394 322 374 342 
+             C 354 362 324 364 300 380 
+             C 278 396 260 414 250 420 
+             C 240 414 222 396 200 380 
+             C 176 364 146 362 126 342 
+             C 106 322 112 294 100 268 
+             C 88 242 60 224 62 194 
+             C 64 166 90 152 112 130 
+             C 132 108 140 80 166 64 
+             C 192 50 228 52 250 28 Z" 
+          fill="url(#scGoldGrad)" stroke="#7c5314" stroke-width="2"/>
+
+    <!-- Corpo Interno Verde Esmeralda -->
+    <path d="M 250 36 
+             C 270 58 304 56 328 69 
+             C 352 84 360 110 378 130 
+             C 398 150 422 163 424 188 
+             C 426 216 400 232 389 256 
+             C 378 280 384 306 365 324 
+             C 346 342 318 344 296 358 
+             C 276 372 259 388 250 393 
+             C 241 388 224 372 204 358 
+             C 182 344 154 342 135 324 
+             C 116 306 122 280 111 256 
+             C 100 232 74 216 76 188 
+             C 78 163 102 150 122 130 
+             C 140 110 148 84 172 69 
+             C 196 56 230 58 250 36 Z" 
+          fill="url(#scBgGrad)" stroke="#eed28e" stroke-width="1.5"/>
+  </g>
+
+  <!-- ILUSTRAÇÃO SACRA: SÃO CAETANO E O MENINO JESUS -->
+  <g stroke="url(#scGoldLines)" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Auréola de São Caetano -->
+    <circle cx="252" cy="102" r="28" stroke-width="1.8" opacity="0.9"/>
+    <circle cx="252" cy="102" r="25.5" stroke-width="1.0" opacity="0.6" stroke-dasharray="2 2"/>
+
+    <!-- Cabeça e Rosto de São Caetano -->
+    <path d="M 242 90 C 248 84 258 84 263 90 C 267 96 266 104 264 110 C 261 116 254 122 248 122 C 243 122 238 116 238 110 Z" stroke-width="1.5"/>
+    <!-- Cabelos e tonsura -->
+    <path d="M 240 92 C 244 86 260 86 264 92" stroke-width="1.4"/>
+    <!-- Barba e semblante sereno -->
+    <path d="M 243 106 C 244 114 250 119 256 117 C 261 115 263 108 263 104" stroke-width="1.3"/>
+    <path d="M 247 98 C 249 97 251 98 252 98 M 256 97 C 258 96 260 97 261 97" stroke-width="1.2"/>
+    <path d="M 253 100 L 253 104 L 255 105" stroke-width="1.2"/>
+
+    <!-- Menino Jesus nos Braços de São Caetano -->
+    <!-- Auréola do Menino Jesus -->
+    <circle cx="274" cy="124" r="16" stroke-width="1.5" opacity="0.85"/>
+    <!-- Rostinho do Menino Jesus -->
+    <circle cx="273" cy="124" r="8" stroke-width="1.4"/>
+    <path d="M 271 123 C 272 122 274 122 275 123" stroke-width="1.0"/>
+    <!-- Mãozinhas e panejamento da criança -->
+    <path d="M 268 132 C 272 136 280 134 282 129" stroke-width="1.3"/>
+    <path d="M 265 136 C 272 144 285 140 286 132" stroke-width="1.2"/>
+
+    <!-- Hábito clerical de São Caetano (Teatino) e braços acolhedores -->
+    <path d="M 235 116 C 220 126 210 148 206 170 C 220 174 240 172 250 170" stroke-width="1.5"/>
+    <path d="M 266 118 C 280 126 295 144 300 166 C 286 170 270 172 255 170" stroke-width="1.5"/>
+    <path d="M 238 126 C 246 142 262 146 272 144" stroke-width="1.3"/>
+    <path d="M 226 140 C 235 156 250 162 264 160" stroke-width="1.2"/>
+  </g>
+
+  <!-- ARQUITETURA SACRA: IGREJA MATRIZ DE SÃO CAETANO (CIPOTÂNEA/MG) -->
+  <g stroke="url(#scGoldLines)" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- TORRE ESQUERDA -->
+    <rect x="170" y="190" width="42" height="125" stroke-width="1.6"/>
+    <!-- Telhado piramidal da torre esquerda -->
+    <path d="M 166 190 L 191 142 L 216 190 Z" stroke-width="1.6"/>
+    <line x1="191" y1="142" x2="191" y2="130" stroke-width="1.8"/>
+    <line x1="186" y1="135" x2="196" y2="135" stroke-width="1.6"/>
+    <!-- Campanário e Sino da torre esquerda -->
+    <path d="M 180 216 C 180 205 202 205 202 216 L 202 236 L 180 236 Z" stroke-width="1.3"/>
+    <path d="M 187 222 C 187 218 195 218 195 222 L 197 232 L 185 232 Z" stroke-width="1.2"/>
+    <!-- Óculo da torre esquerda -->
+    <circle cx="191" cy="260" r="8" stroke-width="1.3"/>
+    <!-- Janelas inferiores -->
+    <rect x="181" y="285" width="20" height="30" rx="2" stroke-width="1.3"/>
+
+    <!-- TORRE DIREITA -->
+    <rect x="288" y="190" width="42" height="125" stroke-width="1.6"/>
+    <!-- Telhado piramidal da torre direita -->
+    <path d="M 284 190 L 309 142 L 334 190 Z" stroke-width="1.6"/>
+    <line x1="309" y1="142" x2="309" y2="130" stroke-width="1.8"/>
+    <line x1="304" y1="135" x2="314" y2="135" stroke-width="1.6"/>
+    <!-- Campanário e Sino da torre direita -->
+    <path d="M 298 216 C 298 205 320 205 320 216 L 320 236 L 298 236 Z" stroke-width="1.3"/>
+    <path d="M 305 222 C 305 218 313 218 313 222 L 315 232 L 303 232 Z" stroke-width="1.2"/>
+    <!-- Óculo da torre direita -->
+    <circle cx="309" cy="260" r="8" stroke-width="1.3"/>
+    <!-- Janelas inferiores -->
+    <rect x="299" y="285" width="20" height="30" rx="2" stroke-width="1.3"/>
+
+    <!-- CORPO CENTRAL DA MATRIZ -->
+    <line x1="212" y1="230" x2="288" y2="230" stroke-width="1.5"/>
+    <!-- Frontão Barroco Curvilíneo -->
+    <path d="M 212 230 C 225 218 238 212 250 212 C 262 212 275 218 288 230" stroke-width="1.8"/>
+    <!-- Cruz do Frontão Central -->
+    <line x1="250" y1="212" x2="250" y2="198" stroke-width="1.8"/>
+    <line x1="245" y1="203" x2="255" y2="203" stroke-width="1.6"/>
+    <!-- Nicho / Janelão central do coro -->
+    <path d="M 242 240 C 242 234 258 234 258 240 L 258 256 L 242 256 Z" stroke-width="1.3"/>
+    <!-- Portal Central da Igreja -->
+    <path d="M 234 278 C 234 268 266 268 266 278 L 266 315 L 234 315 Z" stroke-width="1.5"/>
+    <!-- Divisória das portas -->
+    <line x1="250" y1="270" x2="250" y2="315" stroke-width="1.2"/>
+    <line x1="212" y1="315" x2="288" y2="315" stroke-width="1.6"/>
+  </g>
+
+  <!-- EMBLEMA DA FUNDAÇÃO: 1857 (ESTRELA / LOSANGO BARROCO) -->
+  <g transform="translate(250, 362)">
+    <!-- Estrela Octogonal Dourada -->
+    <path d="M 0 -18 L 6 -6 L 18 0 L 6 6 L 0 18 L -6 6 L -18 0 L -6 -6 Z" 
+          fill="url(#scGoldGrad)" stroke="#7c5314" stroke-width="1.2"/>
+    <rect x="-12" y="-12" width="24" height="24" rx="2" 
+          fill="#0c4234" stroke="url(#scGoldLines)" stroke-width="1.0"/>
+    <!-- Divisória da cruz central -->
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#eed28e" stroke-width="0.8" opacity="0.8"/>
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="#eed28e" stroke-width="0.8" opacity="0.8"/>
+    <!-- Ano 1857 -->
+    <text x="-5" y="-2" text-anchor="middle" font-family="'Nexa', 'Arial', sans-serif" font-size="8" font-weight="bold" fill="#ffd880">1</text>
+    <text x="5" y="-2" text-anchor="middle" font-family="'Nexa', 'Arial', sans-serif" font-size="8" font-weight="bold" fill="#ffd880">8</text>
+    <text x="-5" y="8" text-anchor="middle" font-family="'Nexa', 'Arial', sans-serif" font-size="8" font-weight="bold" fill="#ffd880">5</text>
+    <text x="5" y="8" text-anchor="middle" font-family="'Nexa', 'Arial', sans-serif" font-size="8" font-weight="bold" fill="#ffd880">7</text>
+  </g>
+
+  <!-- TIPOGRAFIA INSTITUCIONAL DA PARÓQUIA -->
+  <g text-anchor="middle">
+    <!-- PARÓQUIA -->
+    <text x="250" y="432" 
+          font-family="'Nexa', sans-serif" 
+          font-size="18" 
+          font-weight="600" 
+          fill="#0e4235" 
+          letter-spacing="7">PARÓQUIA</text>
+
+    <!-- SÃO CAETANO -->
+    <text x="250" y="468" 
+          font-family="'Nexa', 'Georgia', serif" 
+          font-size="34" 
+          font-weight="900" 
+          fill="#072f25" 
+          letter-spacing="1.5">SÃO CAETANO</text>
+
+    <!-- CIPOTÂNEA/MG - ARQUIDIOCESE DE MARIANA -->
+    <text x="250" y="488" 
+          font-family="'Nexa', sans-serif" 
+          font-size="10" 
+          font-weight="700" 
+          fill="#0f483a" 
+          letter-spacing="1.2">CIPOTÂNEA/MG - ARQUIDIOCESE DE MARIANA</text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Palavra em Vida",
+  "description": "Seleção pastoral católica de passagens bíblicas por temas e gerador de folha com 12 cartões para impressão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
