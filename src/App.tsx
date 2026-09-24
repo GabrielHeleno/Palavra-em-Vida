@@ -101,9 +101,9 @@ export default function App() {
 
     // Carrega o status do background salvo
     fetch('/api/background/status')
-      .then(r => r.json())
+      .then(r => (r.ok ? r.json() : null))
       .then(res => {
-        if (res.url) {
+        if (res && res.url) {
           setBackgroundUrl(res.url);
         }
       })
@@ -111,9 +111,9 @@ export default function App() {
 
     // Carrega o logotipo padrão salvo nos arquivos do aplicativo no servidor (/api/logos)
     fetch('/api/logos')
-      .then(r => r.json())
+      .then(r => (r.ok ? r.json() : null))
       .then(res => {
-        if (res.defaultLogoUrl) {
+        if (res && res.defaultLogoUrl) {
           setLogoDataUrl(res.defaultLogoUrl);
           const img = new Image();
           img.onload = () => setLogoAspectRatio(img.width / img.height);
