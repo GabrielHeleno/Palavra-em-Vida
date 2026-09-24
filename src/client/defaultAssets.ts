@@ -1,21 +1,32 @@
 /**
- * Utilitários para resolução de assets estáticos e persistência no cliente (LocalStorage + GitHub Pages)
+ * Assets oficiais empacotados pelo Vite (garantia de 100% de funcionamento no GitHub Pages, Vercel e Local)
  */
+import defaultBgImage from '../assets/background_sao_caetano.jpg';
+import defaultParishLogo from '../assets/paroquia_logo.jpg';
 
-const BASE_URL = import.meta.env.BASE_URL || '/';
+export const DEFAULT_BACKGROUND_URL = defaultBgImage;
+export const DEFAULT_PARISH_LOGO_URL = defaultParishLogo;
 
 export function resolveAssetUrl(url: string | undefined | null): string {
-  if (!url) return '';
-  if (url.startsWith('data:') || url.startsWith('blob:') || url.startsWith('http://') || url.startsWith('https://')) {
+  if (!url) return DEFAULT_PARISH_LOGO_URL;
+  if (
+    url.startsWith('data:') ||
+    url.startsWith('blob:') ||
+    url.startsWith('http://') ||
+    url.startsWith('https://')
+  ) {
     return url;
   }
-  const cleanPath = url.replace(/^\/+/, '');
-  const cleanBase = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
-  return `${cleanBase}${cleanPath}`;
+  // Se for o caminho padrão do background
+  if (url.includes('background_sao_caetano')) {
+    return defaultBgImage;
+  }
+  // Se for o caminho padrão do logo
+  if (url.includes('paroquia') || url.includes('1790185907674')) {
+    return defaultParishLogo;
+  }
+  return url;
 }
-
-export const DEFAULT_BACKGROUND_URL = resolveAssetUrl('background_sao_caetano.jpg');
-export const DEFAULT_PARISH_LOGO_URL = resolveAssetUrl('uploads/logos/1790185907674_copia_de_paroquia__3_.jpg');
 
 // Converte URL estática para Data URL (base64) para garantir compatibilidade com jsPDF e Canvas
 export async function urlToDataUrl(url: string): Promise<string> {
@@ -103,15 +114,15 @@ export function getStoredLogosHistory(): LocalSavedLogo[] {
     console.warn('Falha ao carregar histórico local:', err);
   }
 
-  // Lista padrão de logos com o logotipo oficial da paróquia
+  // Lista padrão de logos com o logotipo oficial da paróquia empacotado
   return [
     {
       id: 'logo_paroquia_oficial',
-      originalName: 'Cópia de paroquia (3).jpg',
-      filename: '1790185907674_copia_de_paroquia__3_.jpg',
+      originalName: 'Logotipo Paróquia São Caetano.jpg',
+      filename: 'paroquia_logo.jpg',
       url: DEFAULT_PARISH_LOGO_URL,
       uploadedAt: '2026-09-23T17:51:47.675Z',
-      fileSizeBytes: 121356,
+      fileSizeBytes: 66000,
       mimeType: 'image/jpeg',
       isDefault: true,
     },
