@@ -28,6 +28,15 @@ import { ScripturePassage, TranslationMetadata, SelectionResponse } from './type
 import { measurePassageInCard } from './client/cardMeasurement';
 import { downloadBibleCardsPDF, openBibleCardsPDFInNewTab } from './client/pdfGenerator';
 import { PRESET_LOGOS, svgToPngDataUrl } from './client/presetLogos';
+import {
+  DEFAULT_BACKGROUND_URL,
+  DEFAULT_PARISH_LOGO_URL,
+  resolveAssetUrl,
+  urlToDataUrl,
+  getStoredLogo,
+  setStoredLogo,
+  getStoredBackground,
+} from './client/defaultAssets';
 
 export default function App() {
   const [metadata, setMetadata] = useState<TranslationMetadata | null>(null);
@@ -49,7 +58,7 @@ export default function App() {
   const [logoDataUrl, setLogoDataUrl] = useState<string | undefined>(undefined);
   const [logoAspectRatio, setLogoAspectRatio] = useState<number>(1);
   const [parishName, setParishName] = useState<string>('');
-  const [backgroundUrl, setBackgroundUrl] = useState<string>('/background_sao_caetano.svg');
+  const [backgroundUrl, setBackgroundUrl] = useState<string>(DEFAULT_BACKGROUND_URL);
 
   // Modais
   const [isAdvancedModalOpen, setIsAdvancedModalOpen] = useState(false);
@@ -86,56 +95,78 @@ export default function App() {
     }
   };
 
-  // Atualiza o logotipo ativo (salvo no servidor/arquivo do app)
-  const handleSelectLogo = (url: string | undefined, aspect: number) => {
-    setLogoDataUrl(url);
-    setLogoAspectRatio(aspect);
-    if (url) {
-      setSuccessToast('Logotipo atualizado com sucesso nos cartões e no PDF!');
-      setTimeout(() => setSuccessToast(null), 3500);
+  // Atualiza o logotipo ativo (salvo no navegador e nos cartões)
+  const handleSelectLogo = async (url: string | undefined, aspect: number) => {
+    if (!url) {
+      setLogoDataUrl(undefined);
+      setStoredLogo(null);
+      return;
     }
+    const resolved = resolveAssetUrl(url);
+    try {
+      const dataUrl = await urlToDataUrl(resolved);
+      setLogoDataUrl(dataUrl);
+      setLogoAspectRatio(aspect);
+      setStoredLogo(dataUrl);
+    } catch {
+      setLogoDataUrl(resolved);
+      setLogoAspectRatio(aspect);
+      setStoredLogo(resolved);
+    }
+    setSuccessToast('Logotipo atualizado com sucesso nos cartões e no PDF!');
+    setTimeout(() => setSuccessToast(null), 3500);
   };
 
   useEffect(() => {
     fetchMetadata();
 
-    // Carrega o status do background salvo
-    fetch('/api/background/status')
-      .then(r => (r.ok ? r.json() : null))
-      .then(res => {
-        if (res && res.url) {
-          setBackgroundUrl(res.url);
-        }
-      })
-      .catch(console.error);
+    // 1. Carrega o background (Local storage -> API servidor -> Default background do app)
+    const storedBg = getStoredBackground();
+    if (storedBg) {
+      setBackgroundUrl(storedBg);
+    } else {
+      fetch('/api/background/status')
+        .then(r => (r.ok ? r.json() : null))
+        .then(res => {
+          if (res && res.url) {
+            setBackgroundUrl(resolveAssetUrl(res.url));
+          } else {
+            setBackgroundUrl(DEFAULT_BACKGROUND_URL);
+          }
+        })
+        .catch(() => {
+          setBackgroundUrl(DEFAULT_BACKGROUND_URL);
+        });
+    }
 
-    // Carrega o logotipo padrão salvo nos arquivos do aplicativo no servidor (/api/logos)
-    fetch('/api/logos')
-      .then(r => (r.ok ? r.json() : null))
-      .then(res => {
-        if (res && res.defaultLogoUrl) {
-          setLogoDataUrl(res.defaultLogoUrl);
+    // 2. Carrega o Logotipo da Paróquia (Local storage -> API servidor -> Default paróquia)
+    const storedLogo = getStoredLogo();
+    if (storedLogo) {
+      setLogoDataUrl(storedLogo);
+      const img = new Image();
+      img.onload = () => setLogoAspectRatio(img.width / img.height);
+      img.src = storedLogo;
+    } else {
+      fetch('/api/logos')
+        .then(r => (r.ok ? r.json() : null))
+        .then(async res => {
+          const rawUrl = res && res.defaultLogoUrl ? res.defaultLogoUrl : DEFAULT_PARISH_LOGO_URL;
+          const resolved = resolveAssetUrl(rawUrl);
+          const dataUrl = await urlToDataUrl(resolved);
+          setLogoDataUrl(dataUrl);
           const img = new Image();
           img.onload = () => setLogoAspectRatio(img.width / img.height);
-          img.src = res.defaultLogoUrl;
-        } else {
-          // Se ainda não houver nenhum arquivo carregado no servidor, inicializa com o preset oficial
-          svgToPngDataUrl(PRESET_LOGOS[0].svg, 300)
-            .then(pngData => {
-              setLogoDataUrl(pngData);
-              setLogoAspectRatio(1);
-            })
-            .catch(console.error);
-        }
-      })
-      .catch(() => {
-        svgToPngDataUrl(PRESET_LOGOS[0].svg, 300)
-          .then(pngData => {
-            setLogoDataUrl(pngData);
-            setLogoAspectRatio(1);
-          })
-          .catch(console.error);
-      });
+          img.src = dataUrl;
+        })
+        .catch(async () => {
+          const resolved = resolveAssetUrl(DEFAULT_PARISH_LOGO_URL);
+          const dataUrl = await urlToDataUrl(resolved);
+          setLogoDataUrl(dataUrl);
+          const img = new Image();
+          img.onload = () => setLogoAspectRatio(img.width / img.height);
+          img.src = dataUrl;
+        });
+    }
   }, []);
 
   const handlePerformSelection = async (customThemes?: string[]) => {

@@ -15,6 +15,12 @@ import {
 } from 'lucide-react';
 import { PRESET_LOGOS, PresetLogo, svgToPngDataUrl } from '../client/presetLogos';
 import { LogoCorner } from '../client/cardMeasurement';
+import {
+  resolveAssetUrl,
+  getStoredLogosHistory,
+  addStoredLogoHistory,
+  urlToDataUrl,
+} from '../client/defaultAssets';
 
 export interface AppSavedLogo {
   id: string;
@@ -53,21 +59,22 @@ export const LogoModal: React.FC<LogoModalProps> = ({
   const [feedbackType, setFeedbackType] = useState<'success' | 'error'>('success');
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Carrega o histórico de logos salvos nos arquivos do aplicativo (servidor)
+  // Carrega o histórico de logos salvos nos arquivos do aplicativo (servidor ou localStorage)
   const fetchLogoHistory = async () => {
     try {
       const res = await fetch('/api/logos');
       if (res.ok) {
         const data = await res.json();
-        setSavedLogos(data.logos || []);
-        if ((!data.logos || data.logos.length === 0) && activeTab === 'history') {
-          // Se ainda não houver nenhum logo no histórico, abre a aba de upload
-          setActiveTab('upload');
+        if (data.logos && data.logos.length > 0) {
+          setSavedLogos(data.logos);
+          return;
         }
       }
     } catch (err) {
       console.warn('Falha ao carregar histórico de logos do servidor:', err);
     }
+    const local = getStoredLogosHistory();
+    setSavedLogos(local);
   };
 
   useEffect(() => {
@@ -100,7 +107,7 @@ export const LogoModal: React.FC<LogoModalProps> = ({
     }
   };
 
-  // Upload direto do arquivo para salvar nos arquivos do app (servidor)
+  // Upload direto do arquivo para salvar nos arquivos do app
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -112,31 +119,42 @@ export const LogoModal: React.FC<LogoModalProps> = ({
     reader.onload = async event => {
       const result = event.target?.result as string;
       try {
-        const response = await fetch('/api/logos/upload', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            dataUrl: result,
-            name: file.name,
-            setAsDefault: true,
-          }),
-        });
-
-        const data = await response.json();
-        if (!response.ok) {
-          throw new Error(data.error || 'Falha ao salvar logo no servidor');
+        try {
+          await fetch('/api/logos/upload', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              dataUrl: result,
+              name: file.name,
+              setAsDefault: true,
+            }),
+          });
+        } catch {
+          // Servidor estático
         }
+
+        const newLogo: AppSavedLogo = {
+          id: `logo_${Date.now()}`,
+          originalName: file.name,
+          filename: file.name,
+          url: result,
+          uploadedAt: new Date().toISOString(),
+          fileSizeBytes: file.size,
+          mimeType: file.type || 'image/jpeg',
+          isDefault: true,
+        };
+        addStoredLogoHistory(newLogo);
 
         // Calcula proporção real da imagem carregada
         const img = new Image();
         img.onload = () => {
           const aspect = img.width / img.height;
-          onSelectLogo(data.logo.url, aspect);
+          onSelectLogo(result, aspect);
         };
         img.src = result;
 
         setFeedbackType('success');
-        setUploadFeedback(`Arquivo "${file.name}" salvo com sucesso nos arquivos do aplicativo e definido como padrão!`);
+        setUploadFeedback(`Arquivo "${file.name}" salvo com sucesso e definido como padrão!`);
         await fetchLogoHistory();
         setActiveTab('history');
       } catch (err: any) {
@@ -162,29 +180,31 @@ export const LogoModal: React.FC<LogoModalProps> = ({
   const handleSetDefault = async (logo: AppSavedLogo) => {
     setIsProcessing(true);
     try {
-      const res = await fetch('/api/logos/set-default', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id: logo.id }),
-      });
-
-      if (!res.ok) {
-        throw new Error('Falha ao definir como padrão no servidor');
+      try {
+        await fetch('/api/logos/set-default', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id: logo.id }),
+        });
+      } catch {
+        // Fallback
       }
+
+      const resolvedUrl = resolveAssetUrl(logo.url);
+      const dataUrl = await urlToDataUrl(resolvedUrl);
 
       const img = new Image();
       img.onload = () => {
-        onSelectLogo(logo.url, img.width / img.height);
+        onSelectLogo(dataUrl, img.width / img.height);
       };
-      img.src = logo.url;
+      img.src = dataUrl;
 
-      await fetchLogoHistory();
+      setUploadFeedback(`Logotipo "${logo.originalName}" ativado como padrão!`);
       setFeedbackType('success');
-      setUploadFeedback(`"${logo.originalName}" agora é o logotipo padrão da aplicação.`);
+      await fetchLogoHistory();
     } catch (err: any) {
-      console.error('Erro ao definir logo padrão:', err);
       setFeedbackType('error');
-      setUploadFeedback(err.message || 'Não foi possível alterar o logotipo padrão.');
+      setUploadFeedback('Falha ao ativar logotipo: ' + err.message);
     } finally {
       setIsProcessing(false);
     }
@@ -435,7 +455,7 @@ export const LogoModal: React.FC<LogoModalProps> = ({
                           <div className="flex items-start gap-3">
                             <div className="w-14 h-14 shrink-0 p-1 bg-white border border-stone-200 rounded-lg flex items-center justify-center overflow-hidden">
                               <img
-                                src={logo.url}
+                                src={resolveAssetUrl(logo.url)}
                                 alt={logo.originalName}
                                 className="max-w-full max-h-full object-contain"
                               />
