@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo arredondado elegante em Verde Litúrgico Profundo -->
+  <rect width="64" height="64" rx="14" fill="url(#emeraldGrad)" />
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.8" />
+
+  <!-- Livro Sagrado Aberto na base -->
+  <path d="M14 46c5-2 12-2 18 1 6-3 13-3 18-1v-8c-5-2-12-2-18 1-6-3-13-3-18-1z" fill="#FAF8F5" opacity="0.95" />
+  <path d="M32 40v8" stroke="#064E3B" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Cruz Dourada Radiante Sagrada no Centro -->
+  <circle cx="32" cy="22" r="14" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" stroke-dasharray="2 2" opacity="0.6" />
+  <!-- Haste Vertical -->
+  <rect x="29.5" y="10" width="5" height="26" rx="1.5" fill="url(#goldGrad)" />
+  <!-- Haste Horizontal -->
+  <rect x="20" y="16" width="24" height="5" rx="1.5" fill="url(#goldGrad)" />
+
+  <!-- Detalhe da Luz Divina no Centro da Cruz -->
+  <circle cx="32" cy="18.5" r="2" fill="#FEF3C7" />
+</svg>
